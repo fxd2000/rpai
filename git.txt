@@ -1,3 +1,6 @@
+只支持ssh,不支持https的了：
+
+第一次上库：
 …or create a new repository on the command line
 echo "# rpai" >> README.md
 git init
@@ -8,7 +11,14 @@ git remote add origin git@github.com:fxd2000/rpai.git
 git push -u origin main
 
 
-…or push an existing repository from the command line
-git remote add origin git@github.com:fxd2000/rpai.git
+提交修改：
+git commit -m "first commit"
 git branch -M main
 git push -u origin main
+
+已经部署到vercel上，url:
+https://rpai-lilac.vercel.app/
+
+如果选用 Next.js 做开发时，推荐关注一些 ORM 框架，例如 Prisma 还是很好用的，这不是这篇教程的重点，这里不会展开介绍。
+
+Chapter 11：添加搜索和分页
